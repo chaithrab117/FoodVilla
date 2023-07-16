@@ -1,0 +1,23 @@
+.contact-img-container{
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://b.zmtcdn.com/webFrontend/8015dbe54fd3659cc0366c1cc77f664c1601890512.jpeg?output-format=webp");
+    color: white;
+}
+
+.contact-details{
+    padding: 20px;
+}
+
+.contact-details div{
+    font-size: larger;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.contact-details p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}

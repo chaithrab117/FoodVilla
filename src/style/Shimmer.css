@@ -1,0 +1,17 @@
+.shimmer-card-container{
+    border: 1px solid black;
+    width: 23%;
+    height: 260px;
+    margin: 10px 0;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(236, 227, 227);
+
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-between;
+}

@@ -1,0 +1,60 @@
+.restaurant-menu-container{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    margin: 10px;
+}
+
+.menu-image-container{
+    min-width: 120px;
+    max-width: 120px;
+    height: 90px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.addBtn:hover{
+    background-color: rgb(54, 215, 59);
+    color: white;
+}
+
+.incBtn:hover,.decBtn:hover{
+    background-color: rgb(54, 215, 59);
+    color: white;
+}
+
+.menu-image-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.details{
+    /* border: 2px solid black; */
+}
+
+.img-button-cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addBtn{
+    margin-top: 2px;
+    padding: 5px 30px;
+    max-width: 90%;
+    color: #60b246;
+    background-color: white;
+    border: 1px solid rgb(174, 174, 170);
+   }
+
+.incBtn,.decBtn{
+    margin-top: 2px;
+    padding: 5px 12px;
+    max-width: 90%;
+    color: #60b246;
+    background-color: white;
+    border: 1px solid rgb(174, 174, 170);
+}

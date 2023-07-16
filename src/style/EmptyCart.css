@@ -1,0 +1,38 @@
+.emptycart-img-container{
+    width: 25%;
+    height: 300px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.emptycart-img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.emptyCart-text{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.emptyCart-text h1{
+    color: rgb(58, 57, 57);
+    font-size: 20px;
+}
+
+.emptyCart-text div{
+    margin: 10px 0;
+    font-size: 14px;
+    color: rgb(89, 87, 87);
+}
+
+.emptyCart-text button{
+    margin: 15px 0;
+    text-transform: uppercase;
+    background-color:#fc8019;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-weight: bolder;
+}

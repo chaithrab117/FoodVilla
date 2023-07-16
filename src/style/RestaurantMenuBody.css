@@ -1,0 +1,42 @@
+.rating-container{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 70px;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 10%;
+    color: #3d9b6d;
+    border: 1px solid rgb(231, 222, 222);
+}
+
+.cusinies-place-container{
+    margin: 3px 0;
+}
+
+.rating-string{
+    font-size: smaller;
+}
+
+.restaurant-details-container{
+    display: flex;
+    justify-content:space-between ;
+    margin: 20px 0;
+}
+
+.menu-container{
+    max-width: 60%;
+    margin: auto;
+}
+
+.dottedLine{
+    border: 1px dashed black;
+}
+
+.menu-description{
+    margin-top: 8px;
+    color: #a19f9f;
+    font-weight: 300;
+    font-size: small;
+}
+

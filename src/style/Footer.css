@@ -1,0 +1,10 @@
+.footer-container{
+    background-color: rgb(34, 33, 33);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-container h1{
+    font-size: medium;
+}

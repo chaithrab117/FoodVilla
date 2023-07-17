@@ -14,10 +14,15 @@ const CartSlice=createSlice({
             data.payload.operation=="inc"?(obj.qty++):(obj.qty--);
          }
       })
+    },
+    removeItem:(state,data)=>{
+      state.items=state.items.filter(obj=>{
+       return obj.id!=data.payload.id
+      });
     }
    }
 });
 
 // CartSlice  =>  {actions,reducer}
 export default CartSlice.reducer;
-export const {addTocart,clearCart,updateItemQty}=CartSlice.actions;
+export const {addTocart,clearCart,updateItemQty,removeItem}=CartSlice.actions;

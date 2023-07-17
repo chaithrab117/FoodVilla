@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../style/CartCard.css'
-import { updateItemQty } from '../redux/slice/CartSlice';
+import { removeItem, updateItemQty } from '../redux/slice/CartSlice';
 import { useDispatch } from 'react-redux';
 
 export const CartCard = ({ item }) => {
@@ -12,11 +12,11 @@ export const CartCard = ({ item }) => {
   }
 
   function decrement(itemObj){
-    dispatch(updateItemQty({itemObj,operation:"dec"}));
     if(count==1){
-      setToggleAddBtn(1);
+      dispatch(removeItem(itemObj));
       return;
     }
+    dispatch(updateItemQty({itemObj,operation:"dec"}));
     setCount(count-1);
   }
 

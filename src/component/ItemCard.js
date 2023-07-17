@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../style/ItemCard.css'
 import { ITEM_IMG_URL } from '../utils/constant'
 import { useDispatch } from 'react-redux'
-import { addTocart, updateItemQty} from '../redux/slice/CartSlice'
+import { addTocart, removeItem, updateItemQty} from '../redux/slice/CartSlice'
 
 export const ItemCard = ({ item }) => {
 
@@ -22,11 +22,12 @@ export const ItemCard = ({ item }) => {
   }
 
   function decrement(itemObj){
-    dispatch(updateItemQty({itemObj,operation:"dec"}));
     if(count==1){
+      dispatch(removeItem(itemObj))
       setToggleAddBtn(1);
       return;
     }
+    dispatch(updateItemQty({itemObj,operation:"dec"}));
     setCount(count-1);
   }
 

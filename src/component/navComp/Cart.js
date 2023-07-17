@@ -9,7 +9,7 @@ import { EmptyCart } from '../EmptyCart';
 export const Cart = () => {
   const cart_ItemData = useSelector(store => store.cart.items);
   const total_qty=cart_ItemData?.map(item=>item.qty).reduce((val1,val2)=>val1+val2,0);
-  const total_price=cart_ItemData?.map(item=>(item.price/100)).reduce((val1,val2)=>val1+val2,0);
+  const total_price=cart_ItemData?.map(item=>(item.qty*(item.price/100))).reduce((val1,val2)=>val1+val2,0);
   const dispatch=useDispatch();
   function clearCart_items(){
     dispatch(clearCart());
@@ -36,7 +36,7 @@ export const Cart = () => {
                 <div className='item'>
                   <div className='name'>{item.name}</div>
                   <div>{item.qty}</div>
-                  <div>{item.price/100}</div>
+                  <div>{item.qty*(item.price)/100}</div>
                 </div>
               )
             })}
